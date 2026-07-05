@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朵朵的小天地 🌸</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; }
+        
+        /* Header */
+        header { background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); padding: 2rem; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header h1 { color: white; font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { color: rgba(255,255,255,0.9); font-size: 1.1rem; }
+        
+        /* Nav */
+        nav { background: white; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; justify-content: center; gap: 2rem; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #666; text-decoration: none; font-weight: 500; transition: color 0.3s; padding: 0.5rem 1rem; border-radius: 20px; }
+        nav a:hover, nav a.active { background: #ff9a9e; color: white; }
+        
+        /* Main */
+        main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        
+        /* Blog Post Card */
+        .post-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 2rem; transition: transform 0.3s, box-shadow 0.3s; }
+        .post-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+        .post-header { padding: 1.5rem; border-bottom: 1px solid #eee; }
+        .post-title { font-size: 1.4rem; color: #333; margin-bottom: 0.5rem; }
+        .post-meta { color: #888; font-size: 0.9rem; display: flex; gap: 1rem; align-items: center; }
+        .post-tags span { background: #ff9a9e20; color: #ff6b78; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.8rem; }
+        .post-excerpt { padding: 1.5rem; color: #555; }
+        .read-more { display: inline-block; background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); color: white; padding: 0.6rem 1.5rem; border-radius: 25px; text-decoration: none; margin: 1.5rem; transition: opacity 0.3s; }
+        .read-more:hover { opacity: 0.9; }
+        
+        /* Comment Section */
+        .comments { background: #f8f9fa; padding: 1.5rem; border-top: 1px solid #eee; }
+        .comment { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #eee; }
+        .comment-author { font-weight: bold; color: #666; }
+        .comment-text { color: #555; margin-top: 0.3rem; }
+        
+        /* Demo Image */
+        .demo-image { width: 100%; border-radius: 10px; margin: 1rem 0; background: linear-gradient(45deg, #ff9a9e, #fad0c4); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; }
+        
+        /* Video Placeholder */
+        .video-placeholder { width: 100%; border-radius: 10px; background: #333; height: 250px; display: flex; align-items: center; justify-content: center; color: white; margin: 1rem 0; }
+        
+        /* Social Links */
+        .social-links { text-align: center; padding: 1.5rem; background: white; border-top: 1px solid #eee; }
+        .social-links a { display: inline-block; margin: 0.3rem; color: #666; font-size: 1.5rem; transition: transform 0.3s; }
+        .social-links a:hover { transform: scale(1.2); }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🌸 朵朵的小天地</h1>
+        <p>记录生活点滴，分享心情与美好 ✨</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="active">首页</a>
+        <a href="#">关于我</a>
+        <a href="#">归档</a>
+        <a href="#">标签</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Blog Post 1 -->
+        <article class="post-card">
+            <div class="post-header">
+                <h2 class="post-title">今天是个好天气 🌞</h2>
+                <div class="post-meta">
+                    <span>📅 2026-07-04</span>
+                    <span>💬 3 条评论</span>
+                    <span><strong>朵朵</strong></span>
+                    <span><a href="#" style="color:#888">🔗 阅读全文 →</a></span>
+                </div>
+            </div>
+            
+            <div class="post-excerpt">
+                <p>今天下午出去散步，发现今天的天气特别好！☀️天空湛蓝湛蓝的，云朵像棉花糖一样 fluffy～</p>
+                
+                <!-- Demo Image -->
+                <div class="demo-image">📸 今天的好天气</div>
+                
+                <p><strong>随机小确幸：</strong></p>
+                <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                    <li>路边开了一朵小花 🌼</li>
+                    <li>咖啡店的手冲咖啡超香 ☕</li>
+                    <li>遇到了同样在散步的小伙伴 👫</li>
+                </ul>
+                
+                <p>生活的美好往往藏在这些小小的瞬间里～💕</p>
+            </div>
+            
+            <!-- Demo Comment Section -->
+            <div class="comments">
+                <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">💬 评论区 (3)</h3>
+                
+                <div class="comment">
+                    <div class="comment-author">👤 小可爱 says:</div>
+                    <div class="comment-text">朵朵今天的状态好棒！也要开心哦～😊</div>
+                </div>
+                
+                <div class="comment">
+                    <div class="comment-author">👤 路人甲 says:</div>
+                    <div class="comment-text">这个天气真的适合散步，我也出去走了走～</div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="post-card">
+            <div class="post-header">
+                <h2 class="post-title">周末宅家日记 🏠</h2>
+                <div class="post-meta">
+                    <span>📅 2026-07-03</span>
+                    <span>💬 5 条评论</span>
+                    <span><strong>朵朵</strong></span>
+                    <span><a href="#" style="color:#888">🔗 阅读全文 →</a></span>
+                </div>
+            </div>
+            
+            <div class="post-excerpt">
+                <p>宅家的一天，看了一部超好看的电影 🎬还做了好吃的点心！</p>
+                
+                <!-- Demo Video Placeholder -->
+                <div class="video-placeholder">
+                    ▶️ 电影推荐：XXXXX (视频播放器)
+                </div>
+            </div>
+            
+            <div class="comments">
+                <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">💬 评论区 (5)</h3>
+                <p style="color: #888;">👀 点击"阅读全文"查看完整评论...</p>
+            </div>
+        </article>
+
+        <!-- Social Links -->
+        <footer class="social-links">
+            <a href="#" title="GitHub">💻</a>
+            <a href="#" title="微博">🐦</a>
+            <a href="#" title="Twitter">🔴</a>
+            <span style="margin: 0.5rem; color: #888;">© 2024-至今 朵朵的小天地 🌸</span>
+        </footer>
+    </main>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
